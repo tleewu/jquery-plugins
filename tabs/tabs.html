@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Cool Website</title>
+  </head>
+  <body>
+    <ul class="tabs" data-content-tabs=".content-tabs">
+      <li><a href="#pug">Pug</a></li>
+      <li><a href="#corgi">Corgi</a></li>
+      <li><a href="#german">German Shepherd</a></li>
+      <div class="hi">
+        hi
+      </div>
+    </ul>
+
+    <section class="content-tabs">
+      <article id="pug" class="active">
+        <p>
+          It's going to be pugs Sunday this week! Pugs are small dogs with big personalities.
+          They live to love and to be loved and were bred for one reason: to be your companion.
+          They will try to live in your lap, eat your food, and sleep on your bed.
+          They are incredibly playful, outgoing, adaptable, happy, lively, and affectionate.
+          They need human companionship to survive, and will not do well at all if left alone for long periods of time.
+        </p>
+      </article>
+      <article id="corgi">
+        <p>
+          Corgies are so cute! The Cardigan Welsh Corgi equals big personality in a little dog.
+          These are intelligent, active, alert little guys who will want to be the center of your world.
+          They love to be with their families, and will shower you with loyalty, devotion and affection.
+          They need daily exercise and love to take long walks with you.
+          They are intelligent and eager to please and do great with obedience training.
+          They excel in obedience, agility, flyball, Frisbee, herding, and tracking competitions.
+          They get along very well with respectful children, but parents need to be aware that Corgis might try to herd kids.
+          (They also might try to herd other animals and your houseguests.) Most Corgis like to be with other cats and dogs.
+          They are adaptable dogs and can live anywhere as long as they get walked, but they do like to bark, so close neighbors might object.
+          While personalities differ within the breed, in general, the Corgi is even-tempered, hardy, friendly, loyal and loving. And they are always full of fun.
+        </p>
+      </article>
+      <article id="german">
+        <p>
+          German Shepherd's are awesome! The German Shepherd Dog is loyal, bold and courageous. He's self confident and utterly fearless.
+          He won't back down if challenged!
+          He's highly intelligent and learns commands very quickly.
+          Because of his high trainability and courage he's the world's number one police and military dog!
+          He's protective of his home and family.
+        </p>
+      </article>
+    </section>
+
+    <script src="../jquery-2.1.4.min.js"></script>
+    <script src="tabs.js"></script>
+    <link href="tabs.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript">
+      $(function() {
+        $('.tabs').tabs();
+      })
+    </script>
+  </body>
+</html>

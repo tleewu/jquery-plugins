@@ -1,0 +1,58 @@
+html, body, section, article,
+h1, h2, p, strong, em, a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+  color: inherit;
+  background: transparent;
+}
+
+ul {
+  padding: 0;
+}
+
+.carousel {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+}
+
+/*
+ul.items = ul with class items
+
+ul > .items = element with class items that is a direct child of a ul
+
+ul .items = element with class items that is any descendant of a ul
+*/
+
+ul.items {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  /*overflow: hidden;*/
+}
+
+li {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  transition: left 0.5s ease;
+}
+
+.active{
+  display: block;
+  left: 0;
+}
+
+.left {
+  left: -100%;
+}
+
+.right {
+  left: 100%;
+}
